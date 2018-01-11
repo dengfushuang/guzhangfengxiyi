@@ -248,8 +248,8 @@ void TaskCollect(void *pdata)
 
 	for(i=0; i<2; i++)
 	{
-		hardware_way[i] = 1;        //初始化模拟开关位置
-		CHANNEL(i,4);               //设定到第4通道
+		hardware_way[i] = 4;        //初始化模拟开关位置
+		CHANNEL(i,hardware_way[i]);               //设定到第4通道
 	}
 
 	OSTimeDly(20);
